@@ -1,0 +1,43 @@
+Introducción
+
+Los sistemas de control de versión son cada vez más indispensables en el desarrollo de software moderno, ya que el control de versiones le permite dar seguimiento a su software al nivel de la fuente. Puede rastrear cambios, volver a etapas anteriores y producir ramificaciones para crear versiones alternativas de archivos y directorios.
+
+Git es uno de los sistemas de control de versión más populares disponibles actualmente. Los archivos de muchos proyectos se mantienen en un repositorio Git y sitios como GitHub, GitLab y Bitbucket facilitan el intercambio y la colaboración en proyectos de desarrollo de software.
+
+En esta guía, mostraremos la forma de instalar y configurar Git en un servidor de Ubuntu 18.04. Abarcaremos la instalación del software de dos formas diferentes, cada una con sus propios beneficios según sus necesidades específicas.
+Requisitos previos
+
+Para completar este tutorial, debe tener un usuario no root con privilegios sudo en un servidor de Ubuntu 18.04. Para aprender a lograr esta configuración, siga los pasos de nuestra guía de configuración inicial manual de servidores o ejecute nuestro script automatizado.
+
+Con su servidor y usuario configurado, estará listo para comenzar.
+Instalación de Git con paquetes predeterminados
+
+Los repositorios predeterminados de Ubuntu le proporcionan un método rápido para instalar Git. Tenga en cuenta que la versión que instale a través de estos repositorios puede ser anterior a la más reciente disponible en la actualidad. Si necesita la última versión, considere pasar a la siguiente sección de este tutorial para aprender a instalar y compilar Git desde la fuente.
+
+Primero, utilice las herramientas de gestión de paquetes apt para actualizar su índice local de paquetes. Con la actualización completa, puede descargar e instalar Git:
+
+    sudo apt update
+    sudo apt install git
+
+Puede confirmar que instaló Git de forma correcta ejecutando el siguiente comando:
+
+    git --version
+
+Output
+git version 2.17.1
+
+Una vez que instale Git correctamente, podrá pasar a la sección Configurar Git de este tutorial para completar su configuración.
+Instalación de Git desde la fuente
+
+Un método más flexible para instalar Git consiste en compilar el software desde la fuente. Esto toma más tiempo y no se mantendrá en su administrador de paquetes, pero le permitirá descargar la versión más reciente y le brindará cierto control sobre las opciones que incluya si desea personalizar.
+
+Antes de comenzar, debe instalar el software necesario para Git. Se encuentra disponible en los repositorios predeterminados, de modo que podemos actualizar nuestro índice de paquetes locales y luego instalar los paquetes.
+
+    sudo apt update
+    sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+
+Después de instalar las dependencias necesarias, puede obtener la versión de Git que desee visitando el espejo del proyecto de Git en GitHub, disponible a través de la siguiente URL:
+
+https://github.com/git/git
+
+A partir de este punto, asegúrese de encontrarse en la rama maestra. Haga clic en el enlace Tags y seleccione la versión de Git que desee. A menos que tenga una razón para descargar una versión candidata (marcada como rc), intente evitar opciones como esta porque pueden ser inestables. 
