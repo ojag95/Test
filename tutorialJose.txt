@@ -1,3 +1,5 @@
 Hola Jose que tal tu dia?
 Saludame aqui: Hola Oscar!
 Como estas bro? que me cuentas?
+bien, aquí aprendiendo lo básico de git, y tú, ¿qué tal? ¿cómo has estado?
+
