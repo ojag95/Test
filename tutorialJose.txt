@@ -5,3 +5,5 @@ bien, aquí aprendiendo lo básico de git, y tú, ¿qué tal? ¿cómo has estado
 Bien amigo aqui subiendo un commit de practica
 Que gusto saber que estés bien hermano, espero que esté hiciendo bien los 
 ejercicios de git, por ahora creo que no lo siento tan difícil y es muy práctico
+Hola amigo como estas?
+Espero que este bien
